@@ -10946,7 +10946,7 @@ header.masthead {
   padding-top: 20.5rem;
   padding-bottom: 8rem;
   text-align: center;
-  color: #fff;
+  color: darkred;
   background-image: url("../assets/img/1header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11318,10 +11318,15 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 #tour-dates{
   width: 70%;
-  position: relative;
-  left: 15%;
+  height: 70%;
+  
+
 }
 #portfolio{
 
   background-color: #000;
+}
+
+#logo{
+  font-family: ;
 }
