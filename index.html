@@ -14,13 +14,14 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="cart.html">
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><h1>Stage-Fright</h1></a>
+                <a class="navbar-brand" href="#page-top"><h1 id="logo">Stage-Fright</h1></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -30,29 +31,60 @@
                         <li class="nav-item"><a class="nav-link" href="#services">Tour-Dates</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Merch</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Members</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Merch</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <a href="cart.html" class="codepen-button">
+                            <span class="span">
+                                <p class="p">Shop</p>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="1em"
+                                    viewBox="0 0 576 512"
+                                    fill="#000"
+                                    class="cart"
+                                >
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                                    ></path>
+                                </svg>
+                            </span>
+                        </a>
+                        
                     </ul>
                 </div>
             </div>
-        </nav>3
+        </nav>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Stage Fright</div>
                 <div class="masthead-heading text-uppercase">Fright Festival 2024</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">BUY NOw</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="ticket.html">
+                    BUY NOW
+                </a>
             </div>
         </header>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Tour-Dates</h2>
+                    <h2 class="section-heading text-uppercase" id="Tour-Dates-h">Tour-Dates</h2>
                     <h3 class="section-subheading text-muted">Upcoming tour date in ohio</h3>
                 </div>
                 <div class="row text-center">
-                    <img src="assets/img/tour-dates" alt="tour-dates" id="tour-dates">
+                    <div class="grid-container">
+                        <img src="assets/Tickets/Ticket1.png" alt="Ticket1" id="Ticket1"><!-- Ticket Here-->
+                        <img src="assets/Tickets/Ticket2.png" alt="Ticket2" id="Ticket2">
+                        <img src="assets/Tickets/Ticket3.png" alt="Ticket3" id="Ticket3">
+                        <img src="assets/Tickets/Ticket4.png" alt="Ticket4" id="Ticket4">
+                        <img src="assets/Tickets/Ticket5.png" alt="Ticket5" id="Ticket5">
+                        <img src="assets/Tickets/Ticket6.png" alt="Ticket6" id="Ticket6">
+                    </div>
+                    
+               
                     <div class="col-md-4">
                         
                         <h4 class="my-3">February, 2025</h4>
@@ -86,10 +118,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/Red shirt (1).png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">T-shirts</div>
+                                <div class="portfolio-caption-heading">Shirts</div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
@@ -101,7 +133,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/Hoodie(red).png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Hoodies</div>
@@ -116,10 +148,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <img class="img-fluid"  src="assets/img/portfolio/pants(red)-10 (1).png" width="1024px" height="1024px" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Long sleeves</div>
+                                <div class="portfolio-caption-heading">Pants</div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
@@ -131,7 +163,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/Hat (1).png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Hats</div>
@@ -146,7 +178,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <img class="img-fluid" src="/assets/img/portfolio/Socks(black).png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Socks</div>
@@ -161,10 +193,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="/assets/img/portfolio/wrist Band(black).png" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/wrist Band(black).png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Braclets</div>
+                                <div class="portfolio-caption-heading">Wristbands</div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
@@ -238,9 +270,11 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">History of our band</h2>
-                    <h3 class="section-subheading text-muted">HI</h3>
-                    <!-- Put History here -->
+                    <h2 class="section-heading text-uppercase">Who are Stage Fright?</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                    <p>Stage Fright tells the story of a band formed by four misfits—shy guitarist Leo, fearless drummer Riley, skeptical bassist Max, and bold singer Nina—who each struggle with stage fright in their own way. Their first rehearsal is a chaotic disaster, and their debut gig at a local bar goes even worse, filled with mistakes and technical mishaps. But instead of being ridiculed, they win over the audience with their raw authenticity and determination.
+                        As they continue to play together, they grow not just as musicians but as individuals, learning to embrace their fears and imperfections. Their music—a gritty blend of grunge, punk, and alt-rock—becomes a reflection of their struggles and triumphs, proving that fear isn’t a barrier but a catalyst for something powerful. Stage Fright transforms their vulnerabilities into the heart of their sound, finding success in their honesty and resilience.
+                    </p>
                 </div>
                 
             </div>
@@ -269,7 +303,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -324,7 +358,7 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="downbutton btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
                 </form>
             </div>
         </section>
@@ -356,18 +390,18 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Stage-Fright T-Shirts</h2>
+                                    <h2 class="text-uppercase">Shirts</h2>
                                     <p class="item-intro text-muted"></p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Order our high quality T-Shirts with our Logo </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Red shirt (1).png" alt="..." />
+                                    <strong><p>25$</p></strong>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Black:</strong>
-                                            Threads
+                                            <strong>These shirts come in black and red varients </strong>
+                                           
                                         </li>
                                         <li>
-                                            <strong>Red:</strong>
-                                            Illustration
+                                            <strong>Black:</strong>
+                                          
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -376,6 +410,7 @@
 
 
                                     </button>
+                                
                                 </div>
                             </div>
                         </div>
@@ -435,7 +470,7 @@
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
-                                            Finish
+                                            
                                         </li>
                                         <li>
                                             <strong>Category:</strong>
