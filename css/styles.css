@@ -588,7 +588,7 @@ progress {
   margin-bottom: 0;
 }
 
-.blockquote-footer {
+.blockquote- {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
@@ -7039,8 +7039,8 @@ textarea.form-control-lg {
 
 .d-none {
   display: none !important;
-}
 
+}
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
@@ -7998,6 +7998,7 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+  color: black;
 }
 
 .text-decoration-none {
@@ -8096,7 +8097,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: white !important;
 }
 
 .text-black-50 {
@@ -10995,11 +10996,13 @@ header.masthead .masthead-heading {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
+  
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
+  
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
@@ -11259,15 +11262,24 @@ header.masthead .masthead-heading {
 .img-brand {
   height: 2.75rem;
 }
-
+#contactForm {
+  position: relative;
+  top: 250px
+}
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("/assets/img/assets/img/ss.webp");
+  height:1000px;
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 section#contact .section-heading {
   color: #fff;
+  position: relative;
+  top: 250px;
+  left:200px;
+  
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -11275,12 +11287,14 @@ section#contact form#contactForm .form-group {
 section#contact form#contactForm .form-group input,
 section#contact form#contactForm .form-group textarea {
   padding: 1.25rem;
+  
 }
 section#contact form#contactForm .form-group input.form-control {
   height: auto;
 }
 section#contact form#contactForm .form-group-textarea {
   height: 100%;
+  
 }
 section#contact form#contactForm .form-group-textarea textarea {
   height: 100%;
@@ -11288,31 +11302,38 @@ section#contact form#contactForm .form-group-textarea textarea {
 }
 section#contact form#contactForm p.help-block {
   margin: 0;
+  
 }
 section#contact form#contactForm .form-control:focus {
   border-color: #ffc800;
   box-shadow: none;
+  
 }
 section#contact form#contactForm ::-webkit-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
+  
 }
 section#contact form#contactForm :-moz-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
+  
 }
 section#contact form#contactForm ::-moz-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
+  
 }
 section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
+  
 }
+
 
 .footer {
   text-align: center;
@@ -11321,17 +11342,135 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 
-#tour-dates{
-  width: 70%;
-  height: 70%;
-  
 
-}
-#portfolio{
 
-  background-color: #000;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  gap: 20px; /* Space between items */
+  padding: 10px;
 }
+
+.grid-container img {
+  width: 100%; /* Make images responsive to grid cell */
+  max-width: 400px; /* Optional: Limit max width of tickets */
+  height: auto; /* Keep the aspect ratio of images */
+}
+
 
 #logo{
-  font-family: ;
+  font-size: 20px;
+}
+
+#Ticket1 {
+  grid-column: 1; /* Row 1, Column 1 */
+  grid-row: 1;
+  position: relative;
+  left: 5%;
+}
+#Ticket2 {
+  grid-column: 1; /* Row 2, Column 1 */
+  grid-row: 2;
+  position: relative;
+  left: 5%;
+}
+#Ticket3 {
+  grid-column: 2; /* Row 1, Column 2 */
+  grid-row: 1;
+  position: relative;
+  left: 5%;
+}
+#Ticket4 {
+  grid-column: 2; /* Row 2, Column 2 */
+  grid-row: 2;
+  position: relative;
+  left: 5%;
+}
+#Ticket5 {
+  grid-column: 3; /* Row 1, Column 3 */
+  grid-row: 1;
+  position: relative;
+  left: 5%;
+}
+#Ticket6 {
+  grid-column: 3; /* Row 2, Column 3 */
+  grid-row: 2;
+  position: relative;
+  left: 5%;
+}
+
+
+/* From Uiverse.io by Muhammad-Usman-911 */ 
+.codepen-button {
+  font-family: monospace;
+  font-weight: bolder;
+  display: block;
+  cursor: pointer;
+  color: #000;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  width: 130px;
+  isolation: isolate;
+  transform: scale(0.85);
+}
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420%;
+  height: 55%;
+  background: linear-gradient(
+    115deg,
+    #628fbc,
+    hsl(0, 93%, 73%),
+    #f032a7,
+    #329af0,
+    #f032a7
+  );
+  background-size: 25% 100%;
+  animation: border-animation 0.75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes border-animation {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.codepen-button span {
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: #fff;
+  border-radius: 3px;
+  height: 50%;
+}
+
+.codepen-button .span {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.codepen-button .p {
+  margin: 0;
 }
