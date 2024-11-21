@@ -5318,7 +5318,7 @@ textarea.form-control-lg {
   width: 100%;
   color: var(--bs-modal-color);
   pointer-events: auto;
-  background-color: var(--bs-modal-bg);
+  background-color: darkred;
   background-clip: padding-box;
   border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
   border-radius: var(--bs-modal-border-radius);
@@ -8163,7 +8163,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: darkred !important;
 }
 
 .bg-dark {
