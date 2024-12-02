@@ -11268,11 +11268,9 @@ header.masthead .masthead-heading {
 }
 section#contact {
   background-color: #212529;
-  background-image: url("/assets/img/assets/img/ss.webp");
-  height:1000px;
+  background-image: url("/assets/img/about/ss.webp");
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 section#contact .section-heading {
   color: #fff;
