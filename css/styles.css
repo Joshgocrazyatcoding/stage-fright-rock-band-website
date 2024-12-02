@@ -11269,8 +11269,10 @@ header.masthead .masthead-heading {
 section#contact {
   background-color: #212529;
   background-image: url("/assets/img/about/ss.webp");
+  height:1000px;
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 section#contact .section-heading {
   color: #fff;
@@ -11485,6 +11487,3 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #000;
   text-decoration: none;
 }
-
-
-
