@@ -641,6 +641,8 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+.container{
+}
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -11260,7 +11262,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("/assets/img/about/ss.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
