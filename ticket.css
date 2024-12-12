@@ -1,0 +1,276 @@
+.boton-elegante{
+    display: flex;
+    position: relative;
+    right: 200%;
+    top: 3px;
+    padding: 10px;
+    font-size: 10px;
+    background: #fff;
+    border-radius: 3px;
+    height: 30%;
+    color: #000;
+    text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columns for months */
+  gap: 20px; /* Space between columns */
+  margin: 0 auto;
+  width: 90%; /* Adjust as needed */
+  justify-content: start;
+}
+#February, #March, #April {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 15px; /* Space between tickets within the same month */
+}
+#name{
+    position: relative;
+    left: 7%;
+}
+#Phone{
+    position: relative;
+    left: 7%;
+}
+#email{
+    position: relative;
+    left: 7%;
+}
+
+#last_name{
+    position: relative;
+    left: 7%;
+}
+#submit{
+    position: relative;
+    left: 7%;
+}
+.input-group {
+    position: relative;
+    display: inline;
+   }
+   
+   .input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 40px;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #ffffff;
+   }
+   
+   .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    padding: 0 .2em;
+    color: #ffffff;
+   }
+
+   .input_email {
+    font-family: "SF Pro";
+    max-width: 190px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #1d1515;
+    outline: none;
+    transition: ease 0.25s;
+  }
+  
+  .input:focus {
+    box-shadow: 5.5px 7px 0 black;
+  }
+  .identification{
+    position: relative;
+    left: 7%;
+  }
+
+/* From Uiverse.io by Yaya12085 */ 
+.btn {
+    position: relative;
+    outline: 0;
+    border: 1px solid transparent;
+    background-color: #488aec;
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  }
+  
+  .btn span {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all .4s ease;
+  }
+  
+  button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .btn span:nth-child(2),.btn span:nth-child(3) {
+    position: absolute;
+    top: 40px;
+    color: #fff;
+  }
+  
+  .btn span:nth-child(2) {
+    background-color: #488aec;
+  }
+  
+  .btn span:nth-child(3) {
+    background-color: #488aec;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+  }
+  
+  .btn:hover span:nth-child(2), .btn:focus span:nth-child(3) {
+    top: 0;
+  }
+  
+  .btn:focus {
+    box-shadow: none;
+  }
+  
+  
+  .form-container {
+    width: 50%;
+    margin: 20px auto;
+
+    border-radius: 8px;
+    padding: 20px;
+
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product {
+    display: flex;
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 0;
+  }
+  
+  .product img {
+    position: relative;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  #product1{
+    display: inline;
+    width: 3%;
+  }
+  #ticket_container{
+    display: inline;
+    position: relative;
+    left: 5%;
+  }
+  .details {
+    flex: 1;
+    margin-left: 10px;
+    position: relative;
+    left: 3%;
+  }
+  
+  .details p {
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: bold;
+    position: relative;
+    left: 5%;
+  }
+  
+  .total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    bottom: 900px;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2A9D8F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 900px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #21867A;
+  }
+  
+  #Ticket_01{
+    width: 40%;
+    height: 20%;
+  }
+  #February{
+    display: inline;
+    position: relative;
+    right: 50%;
+  }
+  #March{
+    display: inline;
+    position: relative;
+    left: 25%;
+    bottom:33.5vh ;
+  }
+  #April{
+    display: inline;
+    position: relative;
+    left: 98%;
+    bottom: 66.5vh;
+  }
+  h1{
+    color: yellow;
+  }
