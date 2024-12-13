@@ -600,12 +600,8 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-<<<<<<< HEAD
-  height: 400px;
-=======
   height: auto;
  
->>>>>>> joshs-branch
 }
 
 .img-thumbnail {
@@ -647,10 +643,7 @@ progress {
   margin-left: auto;
 }
 .container{
-<<<<<<< HEAD
-=======
   
->>>>>>> BernardMK
 }
 
 @media (min-width: 576px) {
@@ -11270,14 +11263,11 @@ header.masthead .masthead-heading {
 }
 #contactForm {
   position: relative;
-  top: 250px
+  top: 30%
 }
 section#contact {
   background-color: #212529;
-<<<<<<< HEAD
-=======
   background-image: url("../assets/img/map-image.png");
->>>>>>> BernardMK
   background-image: url("/assets/img/about/ss.webp");
   background-repeat: no-repeat;
   background-position: center;
@@ -11494,4 +11484,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 30%;
   color: #000;
   text-decoration: none;
+}
+#contact{
+  color: yellow;
 }

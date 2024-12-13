@@ -1,17 +1,25 @@
+body{
+  color: yellow;
+}
 .boton-elegante{
     display: flex;
     position: relative;
+    height: 40%;
     right: 200%;
-    top: 3px;
-    padding: 10px;
-    font-size: 10px;
+    top: 2%;
+    padding: 15px;
     background: #fff;
     border-radius: 3px;
-    height: 30%;
-    color: #000;
-    text-decoration: none;
+    
+    
 }
-
+#back{
+  font-size: 10px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  bottom: 5px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columns for months */
@@ -29,7 +37,7 @@
     position: relative;
     left: 7%;
 }
-#Phone{
+#phone{
     position: relative;
     left: 7%;
 }
@@ -167,11 +175,11 @@
   
   
   .form-container {
-    width: 50%;
-    margin: 20px auto;
-
-    border-radius: 8px;
-    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* 3 equal rows */
+    gap: 10px; /* Adds spacing between rows */
+    height: 100vh; /* Makes the grid take up the full viewport height */
+    margin: 0; /* Removes default body margins */
 
   }
   
@@ -229,12 +237,14 @@
     font-size: 18px;
     color: #fff;
     position: relative;
-    bottom: 900px;
+    right: 8%;
+
+
   }
   
   .submit-btn {
     display: block;
-    width: 100%;
+    width: 13%;
     padding: 10px;
     background-color: #2A9D8F;
     color: white;
@@ -243,7 +253,8 @@
     font-size: 16px;
     cursor: pointer;
     position: relative;
-    bottom: 900px;
+    left: 45%;
+    
   }
   
   .submit-btn:hover {
@@ -254,22 +265,13 @@
     width: 40%;
     height: 20%;
   }
-  #February{
-    display: inline;
+  #February, #March, #April {
+    border: 2px  ; /* Optional: Add borders for visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     position: relative;
-    right: 50%;
-  }
-  #March{
-    display: inline;
-    position: relative;
-    left: 25%;
-    bottom:33.5vh ;
-  }
-  #April{
-    display: inline;
-    position: relative;
-    left: 98%;
-    bottom: 66.5vh;
+    left: 11%;
   }
   h1{
     color: yellow;
