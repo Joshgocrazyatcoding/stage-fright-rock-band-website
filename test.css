@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.digital-clock {
+    background-color: #333;
+    color: #0f0;
+    border-radius: 10px;
+    padding: 20px;
+    
+    text-align: center;
+}
+
+.week-days {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.week-days div {
+    opacity: 0.3;
+    font-size: 14px;
+}
+
+.week-days div.active {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.hour {
+    margin: 0 5px;
+}
+.slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
