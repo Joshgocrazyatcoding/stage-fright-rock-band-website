@@ -8161,8 +8161,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color:  rgb(51, 0, 0);
-  color: white;
+  background-color: darkred !important;
 }
 
 .bg-dark {
@@ -11270,6 +11269,7 @@ section#contact {
   background-color: #212529;
   background-image: url("/assets/img/about/ss.webp");
   background-repeat: no-repeat;
+  height: 1000px;
   background-position: center;
 }
 section#contact .section-heading {
