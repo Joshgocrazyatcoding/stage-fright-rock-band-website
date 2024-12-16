@@ -641,9 +641,6 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
-.container{
-  
-}
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -10848,7 +10845,6 @@ p {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  color: white;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -10951,7 +10947,8 @@ header.masthead {
   padding-top: 20.5rem;
   padding-bottom: 8rem;
   text-align: center;
-  color: #ffc800;
+  color: darkred;
+  background-image: url("../assets/img/1header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10962,7 +10959,6 @@ header.masthead .masthead-subheading {
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
-  color: #ffc800;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
@@ -10990,6 +10986,12 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
+}
+.portfolio-item img {
+  width: 100%;
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* This ensures the image covers the area without distorting */
+  object-position: center; /* Center the image within the container */
 }
 #portfolio .portfolio-item {
   max-width: 26rem;
@@ -11268,9 +11270,10 @@ header.masthead .masthead-heading {
 section#contact {
   background-color: #212529;
   background-image: url("/assets/img/about/ss.webp");
+  height:1000px;
   background-repeat: no-repeat;
-  height: 1000px;
   background-position: center;
+  
 }
 section#contact .section-heading {
   color: #fff;
@@ -11485,7 +11488,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #000;
   text-decoration: none;
 }
-
 .slider {
   position: relative;
   width: 100%;
