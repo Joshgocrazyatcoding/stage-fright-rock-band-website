@@ -7,6 +7,7 @@ function checkCart(){
             listCart = JSON.parse(cookieValue.split('=')[1]);
         }
 }
+
 checkCart();
 addCartToHTML();
 function addCartToHTML(){

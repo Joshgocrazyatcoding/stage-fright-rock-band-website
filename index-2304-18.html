@@ -16,6 +16,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="cart.html">
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="test.js">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -56,15 +57,35 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Stage Fright</div>
-                <div class="masthead-heading text-uppercase">Fright Festival 2024</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="ticket.html">
-                    BUY NOW
-                </a>
+        <div class="slider">
+            <div class="slide">
+                <img src="assets/img/1header-bg.jpg" alt="Image 1">
             </div>
-        </header>
+            <div class="slide">
+                <div class="digital-clock">
+                    <div class="week">
+                        <div class="week-days">
+                            <div id="mon">MON </div>
+                            <div id="tue">TUE </div>
+                            <div id="wed">WED </div>
+                            <div id="thu">THU </div>
+                            <div id="fri">FRI </div>
+                            <div id="sat">SAT </div>
+                            <div id="sun">SUN </div>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div id="hours" class="hour">00</div>
+                        <div class="hour">:</div>
+                        <div id="minutes" class="hour">00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/3.webp" alt="Image 3">
+            </div>
+        </div>
+        
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
@@ -599,6 +620,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="test.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

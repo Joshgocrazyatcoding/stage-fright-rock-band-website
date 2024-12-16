@@ -600,8 +600,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
- 
+  height: 400px;
 }
 
 .img-thumbnail {
@@ -10849,6 +10848,7 @@ p {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
+  color: white;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -10951,8 +10951,7 @@ header.masthead {
   padding-top: 20.5rem;
   padding-bottom: 8rem;
   text-align: center;
-  color: darkred;
-  background-image: url("../assets/img/1header-bg.jpg");
+  color: #ffc800;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10963,6 +10962,7 @@ header.masthead .masthead-subheading {
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
+  color: #ffc800;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
@@ -10996,12 +10996,6 @@ header.masthead .masthead-heading {
   margin-left: auto;
   margin-right: auto;
   
-}
-.portfolio-item img {
-  width: 100%;
-  height: 300px; /* Fixed height */
-  object-fit: cover; /* This ensures the image covers the area without distorting */
-  object-position: center; /* Center the image within the container */
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
@@ -11269,11 +11263,10 @@ header.masthead .masthead-heading {
 }
 #contactForm {
   position: relative;
-  top: 30%
+  top: 250px
 }
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
   background-image: url("/assets/img/about/ss.webp");
   background-repeat: no-repeat;
   background-position: center;
@@ -11491,11 +11484,137 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #000;
   text-decoration: none;
 }
-#contact{
-  color: yellow;
-}
-#Shop{
-  color: white;
 
-  text-decoration: none;
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.masthead-subheading {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.masthead-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+.slider-controls button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.slider-controls button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.digital-clock {
+  background: transparent;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: 30%;
+  width: 40%;
+}
+
+.week {
+  margin-bottom: 20px;
+}
+
+.week-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.week-days div {
+  opacity: 0.3;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.week-days div.active {
+  opacity: 1.5;
+  color: white;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.countdown-item {
+  text-align: center;
+}
+
+.countdown-value {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  min-width: 80px;
+}
+
+.countdown-label {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }

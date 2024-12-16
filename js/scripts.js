@@ -7,6 +7,7 @@
 // Scripts
 // 
 
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -123,3 +124,55 @@ window.onload = function () {
         loadCheckoutPage();
     }
 };
+
+const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function prevSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Optional: Auto slide every 5 seconds
+        setInterval(nextSlide, 5000);
+
+function updateClock() {
+    const now = new Date();
+    const targetDate = new Date("February 3, 2025 00:00:00");
+    const difference = targetDate - now;
+
+    // Update time
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = minutes;
+
+    // Highlight current day
+    const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+    days.forEach(day => document.getElementById(day).classList.remove('active'));
+    document.getElementById(days[now.getDay()]).classList.add('active');
+
+    // Countdown calculation
+    const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = String(d).padStart(2, '0');
+    document.getElementById('hours-countdown').textContent = String(h).padStart(2, '0');
+    document.getElementById('minutes-countdown').textContent = String(m).padStart(2, '0');
+    document.getElementById('seconds-countdown').textContent = String(s).padStart(2, '0');
+}
+
+// Update every second
+setInterval(updateClock, 1000);
+// Initial call to prevent delay
+updateClock();
