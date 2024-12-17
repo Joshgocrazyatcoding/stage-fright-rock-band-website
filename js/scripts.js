@@ -7,6 +7,7 @@
 // Scripts
 // 
 
+alert("Thank You for visiting the website!");
 
 window.addEventListener('DOMContentLoaded', event => {
 
