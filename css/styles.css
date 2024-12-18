@@ -131,6 +131,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -11659,4 +11660,39 @@ footer{
   position: relative;
   right: 20%;
   bottom: 166px;
+}
+
+
+.navbar-brand {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+#logo {
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+#logo:hover {
+  color: #666;
+}
+#sf_t{
+  color: #ffc800;
+}
+#spider {
+  position: absolute;
+  left: 50%;
+  bottom: -50px; /* Adjusted to accommodate image size */
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  z-index: 10;
+  max-width: 200px; /* Adjust based on your image size */
+  pointer-events: none; /* Ensures the image doesn't interfere with hover */
+}
+
+.navbar-brand:hover #spider {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
 }

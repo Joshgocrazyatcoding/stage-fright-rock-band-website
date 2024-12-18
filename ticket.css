@@ -33,27 +33,7 @@ body{
   grid-template-rows: auto;
   gap: 15px; /* Space between tickets within the same month */
 }
-#name{
-    position: relative;
-    left: 7%;
-}
-#phone{
-    position: relative;
-    left: 7%;
-}
-#email{
-    position: relative;
-    left: 7%;
-}
 
-#last_name{
-    position: relative;
-    left: 7%;
-}
-#submit{
-    position: relative;
-    left: 7%;
-}
 .input-group {
     position: relative;
     display: inline;
