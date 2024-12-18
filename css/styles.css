@@ -11628,3 +11628,35 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: white;
   text-decoration: none;
 }
+footer{
+  color: white;
+}
+#Policy{
+  color: white;
+}
+#Dev_title{
+  position: relative;
+  left: 9%;
+}
+.Dev_team{
+  position: relative;
+  right: 10%;
+}
+#Muhammed{
+  display: inline;
+  position: relative;
+  left: 20%;
+  bottom: 52px;
+}
+#Joshua{
+  display: inline;
+  position: relative;
+  left: 40%;
+  bottom: 104px;
+}
+#Ali{
+  display: inline;
+  position: relative;
+  right: 20%;
+  bottom: 166px;
+}
