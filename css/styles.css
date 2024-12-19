@@ -3822,6 +3822,7 @@ textarea.form-control-lg {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  
 }
 
 .navbar-toggler {
@@ -3889,6 +3890,7 @@ textarea.form-control-lg {
   .navbar-expand-sm .navbar-toggler {
     display: none;
   }
+  
   .navbar-expand-sm .offcanvas {
     position: static;
     z-index: auto;
@@ -3900,6 +3902,9 @@ textarea.form-control-lg {
     border: 0 !important;
     transform: none !important;
     transition: none;
+    
+    
+
   }
   .navbar-expand-sm .offcanvas .offcanvas-header {
     display: none;
@@ -10906,8 +10911,8 @@ p {
   height: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
+  font-family: "shlop", sans-serif;
+  font-size: 1.2rem;
   color: #fff;
   letter-spacing: 0.0625em;
 }
@@ -11369,6 +11374,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 #logo{
   font-size: 20px;
+  position: relative;
+  bottom: 0.5em;
 }
 
 #Ticket1 {
@@ -11676,6 +11683,7 @@ footer{
 #logo {
   margin: 0;
   transition: color 0.3s ease;
+  font-size: 30px;
 }
 
 #logo:hover {
