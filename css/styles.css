@@ -93,8 +93,8 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
+  font-family: Old English Text MT;
+  font-size: 30px;
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-black);
@@ -11679,6 +11679,7 @@ footer{
 }
 #sf_t{
   color: #ffc800;
+  font-family: Old English Text MT;
 }
 #spider {
   position: absolute;
