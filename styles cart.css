@@ -276,6 +276,7 @@ header .totalQuantity{
 }
 .cart_title{
   text-align: center;
+  
 }
 
 
@@ -835,6 +836,7 @@ header .totalQuantity{
   border-radius: 3px;
   height: 20%;
   color: #000;
+  font-family: "shlop", sans-serif;
 }
 
 .codepen-button {
@@ -850,4 +852,5 @@ header .totalQuantity{
 }
 #title{
   color: yellow;
+  font-family: "shlop", sans-serif;
 }
