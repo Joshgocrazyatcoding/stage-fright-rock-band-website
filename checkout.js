@@ -132,7 +132,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Total Quantity: ${totalQuantity}</p>
                     <p>Total Price: ${totalPrice}</p>
                     <p>Your order is being processed.</p>
+                    <p>The Bill will be emailed to you for you to pay</p>
                     <a href="cart.html" style="color: yellow;">Return to Shop</a>
+
                 </div>
             </body>
             </html>

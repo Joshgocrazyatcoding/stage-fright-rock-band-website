@@ -177,3 +177,4 @@ function updateClock() {
 setInterval(updateClock, 1000);
 // Initial call to prevent delay
 updateClock();
+

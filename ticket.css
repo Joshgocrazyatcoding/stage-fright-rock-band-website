@@ -1,6 +1,42 @@
 body{
-  color: yellow;
+  font-family: monospace;
+  overflow-x: hidden;
+  font-synthesis: 15px;
+  background: linear-gradient(45deg, 
+  #8b0000, /* Dark Red */
+  #c21807, /* Crimson */
+  #ff4500, /* Orange Red */
+  #800000, /* Maroon */
+  #3a3a3a, /* Charcoal Gray */
+  #1f1f1f, /* Deep Black */
+  #6b0f1a, /* Burgundy */
+  #b22222, /* Firebrick */
+  #ff6347, /* Tomato */
+  #333333  /* Dark Gray */
+  
+);
+color: yellow;
+background-size: 900% 900%; /* Larger background for smooth scrolling effect */
+animation: gradientScroll 60s ease infinite;
 }
+@keyframes gradientScroll {
+  0% {
+    background-position: 0% 50%; /* Start position */
+  }
+  25% {
+    background-position: 50% 50%; /* Halfway horizontally */
+  }
+  50% {
+    background-position: 100% 50%; /* End position horizontally */
+  }
+  75% {
+    background-position: 50% 50%; /* Back to halfway */
+  }
+  100% {
+    background-position: 0% 50%; /* Back to start */
+  }
+}
+
 .boton-elegante{
     display: flex;
     position: relative;
