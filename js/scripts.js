@@ -178,3 +178,28 @@ setInterval(updateClock, 1000);
 // Initial call to prevent delay
 updateClock();
 
+function animateBox(id) {
+    const box = document.getElementById(id);
+    box.classList.remove('animate');
+    // Trigger reflow
+    void box.offsetWidth;
+    box.classList.add('animate');
+}
+
+// Animate boxes on scroll
+function checkScroll() {
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+        const triggerBottom = window.innerHeight * 0.8;
+
+        if (boxTop < triggerBottom) {
+            box.classList.add('animate');
+        }
+    });
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', checkScroll);
+// Initial check
+checkScroll();
