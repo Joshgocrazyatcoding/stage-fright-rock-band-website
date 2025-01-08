@@ -11711,3 +11711,134 @@ footer{
   transform: translateX(-50%) scale(1);
   opacity: 1;
 }
+.product-grid {
+  display: grid;
+  display: flex;
+  /* Mobile first - single column */
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Tablet - 2 columns */
+@media (min-width: 600px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+  }
+}
+
+/* Desktop - 3 columns */
+@media (min-width: 900px) {
+  .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      padding: 24px;
+  }
+}
+
+/* Large Desktop - 4 columns */
+@media (min-width: 1200px) {
+  .product-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 30px;
+  }
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  overflow: hidden;
+  width: 120%;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-details {
+  padding: 16px;
+}
+
+.color-options {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #e0e0e0;
+}
+
+.brand {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #2c2c2c;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+/* Adjust text sizes for mobile */
+@media (max-width: 600px) {
+  .brand {
+      font-size: 12px;
+  }
+  .product-name {
+      font-size: 14px;
+  }
+  .price {
+      font-size: 16px;
+  }
+  .product-details {
+      padding: 12px;
+  }
+}
+.brand-ex{
+  padding: 7px ;
+  border-radius: 20px;
+  background-color: #000;
+  height: 450px;
+}
+.h2{
+  text-align: center;
+}
