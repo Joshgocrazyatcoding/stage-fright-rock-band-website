@@ -11883,6 +11883,12 @@ footer{
   width: 80%;
   object-fit: fill;
 }
+#discord{
+  width: 70%;
+  height: 70%;
+  position: relative;
+  left: 160%;
+}
 
 .image-box img {
   max-width: 100%;
