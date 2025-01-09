@@ -11857,10 +11857,10 @@ footer{
 }
 
 .box {
-  border: 2px solid;
+  
   border-radius: 8px;
   padding: 20px;
-  min-height: 250px;
+  min-height: 350px;
   transition: transform 0.3s ease;
 }
 
@@ -11873,19 +11873,20 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 2px solid;
 }
 
 .image-box {
+  
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 70%;
+  width: 80%;
+  object-fit: fill;
 }
 
 .image-box img {
   max-width: 100%;
-  height: auto;
+  width: 80%;
+  
   border-radius: 4px;
 }
 
