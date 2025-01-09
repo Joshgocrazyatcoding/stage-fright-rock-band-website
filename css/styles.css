@@ -11844,7 +11844,6 @@ footer{
   color: white;
 }
 
-
 .tainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -11875,6 +11874,9 @@ footer{
   flex-direction: column;
   justify-content: center;
   border: 2px solid;
+  font-size: 25px;
+  color: black;
+  
 }
 
 .image-box {
@@ -11898,7 +11900,7 @@ footer{
 }
 
 h2 {
-  color: #2c3e50;
+  color: black;
   margin-bottom: 15px;
 }
 
@@ -11938,4 +11940,17 @@ p {
 #Picture2{
   position: relative;
   left: 30%;
+}
+#Names1
+{
+   color:whitesmoke;
+}
+#WhoAre
+{
+  color:white
+}
+#Name_members
+{
+  color: lightgray;
+  
 }
