@@ -11874,6 +11874,9 @@ footer{
   flex-direction: column;
   justify-content: center;
   border: 2px solid;
+  font-size: 25px;
+  color: black;
+  
 }
 
 .image-box {
@@ -11891,7 +11894,7 @@ footer{
 }
 
 h2 {
-  color: whitesmoke;
+  color: black;
   margin-bottom: 15px;
 }
 
@@ -11931,4 +11934,17 @@ p {
 #Picture2{
   position: relative;
   left: 30%;
+}
+#Names1
+{
+   color:whitesmoke;
+}
+#WhoAre
+{
+  color:white
+}
+#Name_members
+{
+  color: lightgray;
+  
 }
