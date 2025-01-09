@@ -206,7 +206,9 @@ animation: gradientScroll 60s ease infinite;
   h4{
     font-size: 20px;
   }
-  
+  #logo{
+    font-family: "shlop", sans-serif;
+  }
   .product {
     display: flex;
     display: inline;
@@ -295,3 +297,4 @@ animation: gradientScroll 60s ease infinite;
   h1{
     color: yellow;
   }
+  
