@@ -203,6 +203,9 @@ animation: gradientScroll 60s ease infinite;
     text-align: center;
     margin-bottom: 20px;
   }
+  h4{
+    font-size: 20px;
+  }
   
   .product {
     display: flex;
