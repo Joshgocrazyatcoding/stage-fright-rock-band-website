@@ -68,7 +68,7 @@ checkCart();
 function addCart($idProduct){
     let productsCopy = JSON.parse(JSON.stringify(products));
     //// If this product is not in the cart
-    alert("Added to cart.");
+    
     if(!listCart[$idProduct]) 
     {
         listCart[$idProduct] = productsCopy.filter(product => product.id == $idProduct)[0];
@@ -135,5 +135,28 @@ function changeQuantity($idProduct, $type){
     // save new data in cookie
     document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
     // reload html view cart
+    addCartToHTML();
+}
+function addCart($idProduct){
+    let productsCopy = JSON.parse(JSON.stringify(products));
+    
+    if(!listCart[$idProduct]) {
+        listCart[$idProduct] = productsCopy.filter(product => product.id == $idProduct)[0];
+        listCart[$idProduct].quantity = 1;
+    } else {
+        listCart[$idProduct].quantity++;
+    }
+    
+    // Show notification
+    const notification = document.getElementById('notification');
+    notification.classList.add('show');
+    
+    // Hide notification after 2 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 2000);
+
+    // Update cookie and cart display
+    document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
     addCartToHTML();
 }
