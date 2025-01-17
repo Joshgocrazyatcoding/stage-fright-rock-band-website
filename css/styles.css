@@ -599,7 +599,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "â€”Â ";
 }
 
 .img-fluid {
@@ -11280,13 +11280,31 @@ header.masthead .masthead-heading {
   position: relative;
   top: 250px
 }
+#contact_tx {
+  place-self: center;
+}
 section#contact {
   background-color: #212529;
   background-image: url("/assets/img/about/ss.webp");
-  height:1000px;
   background-repeat: no-repeat;
   background-position: center;
-  
+  background-size: cover;  /* Makes background image cover the container */
+  min-height: 100vh;  /* Takes at least full viewport height */
+  width: 100%;  /* Takes full width */
+  display: flex;  /* Enables flexbox for content alignment */
+  flex-direction: column;  /* Stack children vertically */
+  justify-content: center;  /* Center content vertically */
+  align-items: center;  /* Center content horizontally */
+  padding: 2rem;  /* Add some padding for smaller screens */
+  box-sizing: border-box;  /* Includes padding in width calculation */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  section#contact {
+    padding: 1rem;
+    min-height: 500px;  /* Minimum height for mobile */
+  }
 }
 section#contact .section-heading {
   color: #fff;
@@ -11845,112 +11863,55 @@ footer{
 }
 
 .tainer {
-  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;  /* or whatever max-width you prefer */
   margin: 0 auto;
+  gap: 2rem;  /* replaces your <br><br> tags */
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  margin-bottom: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
 }
 
-.box {
-  
-  border-radius: 8px;
-  padding: 20px;
-  min-height: 350px;
-  transition: transform 0.3s ease;
+/* Remove these absolute positioning styles as they can cause layout issues */
+#text1 {
+  /* remove right: 12% */
+  margin-right: auto;
+  margin-left: 25px;
+  color: white;
 }
 
-.box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+#text2 {
+  /* remove left: 12% */
+  margin-left: auto;
+  color: white;
 }
 
-.text-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 2px solid;
-  font-size: 25px;
-  color: black;
-  
+#Picture2 {
+  /* remove left: 30% */
+  margin-left: auto;
 }
 
 .image-box {
-  
+  width: 100%;  /* changed from 80% */
   display: flex;
-  width: 80%;
-  object-fit: fill;
-}
-#discord{
-  width: 70%;
-  height: 70%;
-  position: relative;
-  left: 160%;
+  justify-content: center;
 }
 
 .image-box img {
-  max-width: 100%;
-  width: 80%;
-  
-  border-radius: 4px;
+  width: 100%;  /* changed from 80% */
+  max-width: 500px;  /* add a max-width to prevent too-large images */
+  height: auto;
+  object-fit: cover;
 }
-
-h2 {
-  color: black;
-  margin-bottom: 15px;
-}
-
-p {
-  color: #666;
-}
-
-@media (min-width: 768px) {
-  .grid {
-      grid-template-columns: 1fr 1fr;
-  }
-}
-
-.animate {
-  animation: fadeIn 0.5s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(20px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-#text1{
-  position: relative;
-  right: 12%;
-}
-#text2{
-  position: relative;
-  left: 12%;
-}
-#Picture2{
-  position: relative;
-  left: 30%;
-}
-#Names1
-{
-   color:whitesmoke;
-}
-#WhoAre
-{
-  color:white
-}
-#Name_members
-{
-  color: lightgray;
-  
+#discord{
+  display: flex;
+  width: 50%;
+  height: 20%;
 }

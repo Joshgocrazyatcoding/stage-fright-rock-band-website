@@ -1,0 +1,49 @@
+body {
+    background-color: #990000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: monospace;
+  }
+
+  .confirmation-card {
+    background-color: #1a0000;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    color: #ffeb00;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .details {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+  }
+
+  .processing-text {
+    color: #ffeb00;
+    margin: 1rem 0;
+  }
+
+  .email-text {
+    color: #ffeb00;
+    margin: 1rem 0;
+  }
+
+  a {
+    color: #ffeb00;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  a:hover {
+    color: #fff700;
+  }

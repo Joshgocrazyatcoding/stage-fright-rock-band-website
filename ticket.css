@@ -1,5 +1,8 @@
+
+
+@import url("https://use.typekit.net/yfe8fbb.css");
 body{
-  font-family: "shlop", sans-serif;
+  
   overflow-x: hidden;
   font-synthesis: 15px;
   background: linear-gradient(45deg, 
@@ -50,24 +53,142 @@ animation: gradientScroll 60s ease infinite;
     
 }
 #back{
-  font-size: 10px;
+  font-size: 15px;
   text-decoration: none;
   color: #000;
   position: relative;
   bottom: 5px;
+  align-items: center;
 }
+/* Main Grid Container */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columns for months */
-  gap: 20px; /* Space between columns */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
   margin: 0 auto;
-  width: 90%; /* Adjust as needed */
-  justify-content: start;
+  width: 90%;
+  max-width: 1400px;
+  padding: 2rem;
 }
-#February, #March, #April {
+
+/* Month Sections */
+#February,
+#March,
+#April {
   display: grid;
   grid-template-rows: auto;
-  gap: 15px; /* Space between tickets within the same month */
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Large Desktop (1440px and up) */
+@media screen and (min-width: 1440px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop (1024px to 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
+
+/* Tablet (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  #February,
+  #March,
+  #April {
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+}
+
+/* Large Mobile (480px to 767px) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    width: 95%;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  #February,
+  #March,
+  #April {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+/* Small Mobile (479px and below) */
+@media screen and (max-width: 479px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+
+  #February,
+  #March,
+  #April {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+}
+
+/* Support for modern grid features */
+@supports (grid-template-rows: masonry) {
+  .grid-container {
+    grid-template-rows: masonry;
+    align-items: start;
+  }
+}
+
+/* Ensure proper display on landscape orientation */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .grid-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  #February,
+  #March,
+  #April {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+}
+
+/* High pixel density screens */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi) {
+  #February,
+  #March,
+  #April {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Support for safe-area-inset on modern devices */
+@supports (padding: max(0px)) {
+  .grid-container {
+    padding-left: max(2rem, env(safe-area-inset-left));
+    padding-right: max(2rem, env(safe-area-inset-right));
+  }
 }
 
 .input-group {
@@ -83,6 +204,7 @@ animation: gradientScroll 60s ease infinite;
     font-size: 1rem;
     color: #f5f5f5;
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    margin-bottom: 20px;
    }
    
    .user-label {
@@ -230,6 +352,7 @@ animation: gradientScroll 60s ease infinite;
     display: inline;
     width: 3%;
   }
+ 
   #ticket_container{
     display: inline;
     position: relative;
@@ -845,4 +968,8 @@ animation: gradientScroll 60s ease infinite;
     --bs-navbar-brand-hover-color: #fff;
     --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  #ticket_logo{
+    color: yellow;
+    font-family: "shlop", sans-serif;
   }
